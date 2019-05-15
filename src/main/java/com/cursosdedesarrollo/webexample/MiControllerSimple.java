@@ -14,11 +14,10 @@ import java.util.Map;
 @Controller
 
 public class MiControllerSimple {
-    @RequestMapping("/hola")
-    @GetMapping
+    @GetMapping("/hola")
     @ResponseBody
     public String imprimeCosa(){
-        return "Hola Mundo";
+            return "Hola Mundo";
     }
     @RequestMapping("/getDateAndTime")
     @GetMapping
